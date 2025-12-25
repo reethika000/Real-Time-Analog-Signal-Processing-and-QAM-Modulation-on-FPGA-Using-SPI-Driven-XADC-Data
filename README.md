@@ -1,5 +1,5 @@
 //XADC MAIN CODE
-`timescale 1ns / 1ps
+```timescale 1ns / 1ps
 module xadc(di_in,daddr_in,den_in,dwe_in,drdy_out,do_out,dclk_in,reset_in,
             vp_in,vn_in,vauxp0,vauxn0,vccint_alarm_out,vccaux_alarm_out,channel_out,
             eoc_out,vbram_alarm_out,alarm_out,eos_out,busy_out,count,shift_reg,valid,miso);
@@ -78,7 +78,7 @@ endmodule
 
 
 //SPI INTERFACE CODE
-`timescale 1ns / 1ps
+```timescale 1ns / 1ps
 module spi_interface(clk,sclk,cs,do_out,drdy_out,shift_reg,miso,count);
 input clk,sclk;
 input drdy_out,cs;
@@ -106,7 +106,7 @@ endmodule
 
 
 //QAM MODULATION CODE
-`timescale 1ns / 1ps
+```timescale 1ns / 1ps
 module qam16_modulator (
     input wire rst,
     input wire [1:0] data_in,   // 4 bits: [I1 I0 Q1 Q0]
